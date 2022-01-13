@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include <stlib.h>
 //Variables of code used
     //a = age
     //d = discount for seniors
