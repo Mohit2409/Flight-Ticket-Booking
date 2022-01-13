@@ -11,7 +11,7 @@
 void ticketbooking()
 {
     char name[30],x[20],y[20];
-    char c[1];
+    char c[3];
     int a,n;
     printf("Enter your name : ");
     scanf("%s",name);
@@ -28,11 +28,11 @@ void ticketbooking()
     printf("Confirmation : ");
     scanf("%s",c);
     printf("%s",c);
-    if((c == 'Y') || (c == 'y'))
+    if((c == "Yes") || (c == "yes"))
     {
         printf("\nTicket confirmed");
     }
-    else if((c == 'N') || (c == 'n'))
+    else if((c == "No") || (c == "no"))
     {
         printf("\nRestart ticket booking process");
     }
