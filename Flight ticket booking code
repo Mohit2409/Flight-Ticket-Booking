@@ -25,14 +25,14 @@ void ticketbooking()
     scanf("%d",&n);
     printf("\nYour ticket details : \n");
     printf("Ticket for %d people from %s to %s\n",n,x,y);
-    printf("Confirmation : ");
+    printf("Confirmation(Yes/No):");
     scanf("%s",c);
-    printf("%s",c);
-    if((c == "Yes") || (c == "yes"))
+    printf("%s\n",c);
+    if (!strcmp(c,"Yes"))
     {
         printf("\nTicket confirmed");
     }
-    else if((c == "No") || (c == "no"))
+    else if (!strcmp(c,"No"))
     {
         printf("\nRestart ticket booking process");
     }
