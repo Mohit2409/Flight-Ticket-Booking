@@ -41,10 +41,15 @@ void ticketbooking()
         printf("\nInvalid input");
     }
 }
-
-int main() 
-{   printf("Flight ticket reservation system\n");
+void ticketpurchase()
+{
+    
+}
+int main()
+{   
+    printf("\n**********Flight ticket reservation system**********\n");
     ticketbooking();
+    ticketpurchase();
    //testing
    // printf("%s %d",name,a);
     return 0;
