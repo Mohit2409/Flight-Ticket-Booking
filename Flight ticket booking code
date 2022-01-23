@@ -4,15 +4,14 @@
     //a = age
     //d = discount for seniors
     //n = number of tickets
-    //ta = rate of each ticket for adult
-    //tc = rate of ticket for child
+    //s = class seat
     //x = departure city
     //y = destination city
 void ticketbooking()
 {
     char name[30],x[20],y[20];
     char c[3];
-    int a,n;
+    int a,n,s;
     printf("Enter your name : ");
     scanf("%s",name);
     printf("\nEnter your age : ");
@@ -23,8 +22,18 @@ void ticketbooking()
     scanf("%s",y);
     printf("\nEnter number of tickets you wanna buy : ");
     scanf("%d",&n);
+    printf("\nEnter 1 for First class seat and 2 for Economy class seat : ");
+    scanf("%d",&s);
     printf("\nYour ticket details : \n");
-    printf("Ticket for %d people from %s to %s\n",n,x,y);
+    if(s==1)
+    {
+        printf("%d First class seat(s) booked",n);
+    }
+    else if (s==2)
+    {
+        printf("%d Economy class seat(s) booked",n);
+    }
+    printf(" for %d people from %s to %s\n",n,x,y);
     printf("Confirmation(Yes/No):");
     scanf("%s",c);
     printf("%s\n",c);
@@ -41,15 +50,10 @@ void ticketbooking()
         printf("\nInvalid input");
     }
 }
-void ticketpurchase()
-{
-    
-}
 int main()
 {   
     printf("\n**********Flight ticket reservation system**********\n");
     ticketbooking();
-    ticketpurchase();
    //testing
    // printf("%s %d",name,a);
     return 0;
