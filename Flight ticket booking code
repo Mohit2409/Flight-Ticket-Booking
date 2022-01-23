@@ -34,7 +34,7 @@ void ticketbooking()
         printf("%d Economy class seat(s) booked",n);
     }
     printf(" for %d people from %s to %s\n",n,x,y);
-    printf("Confirmation(Yes/No):");
+    printf("Ticket Confirmation (Yes/No):");
     scanf("%s",c);
     printf("%s\n",c);
     if (!strcmp(c,"Yes"))
