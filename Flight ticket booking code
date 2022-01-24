@@ -5,6 +5,7 @@
     //d = discount for seniors
     //n = number of tickets
     //s = class seat
+    //c = Ticket confirmation
     //x = departure city
     //y = destination city
 void ticketbooking()
